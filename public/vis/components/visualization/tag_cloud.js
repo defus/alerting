@@ -1,11 +1,11 @@
 var d3 = require('d3');
 var _ = require('lodash');
-var layoutCloud = require('plugins/tagcloud/vis/components/d3.layout.cloud/d3.layout.cloud');
-var gGenerator = require('plugins/tagcloud/vis/components/elements/g');
-var textElement = require('plugins/tagcloud/vis/components/elements/text');
-var valuator = require('plugins/tagcloud/vis/components/utils/valuator');
+var layoutCloud = require('plugins/alerting/vis/components/d3.layout.cloud/d3.layout.cloud');
+var gGenerator = require('plugins/alerting/vis/components/elements/g');
+var textElement = require('plugins/alerting/vis/components/elements/text');
+var valuator = require('plugins/alerting/vis/components/utils/valuator');
 
-function tagCloud() {
+function alertingCloud() {
   var textScale = d3.scale.linear();
   var accessor = function (d) { return d; };
   var colorScale = d3.scale.category20();
@@ -220,4 +220,4 @@ function tagCloud() {
   return generator;
 }
 
-module.exports = tagCloud;
+module.exports = alertingCloud;

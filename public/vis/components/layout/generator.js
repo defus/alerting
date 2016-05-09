@@ -1,7 +1,7 @@
 var d3 = require('d3');
-var attrs = require('plugins/tagcloud/vis/components/utils/attrs');
-var baseLayout = require('plugins/tagcloud/vis/components/layout/layout');
-var gGenerator = require('plugins/tagcloud/vis/components/elements/g');
+var attrs = require('plugins/alerting/vis/components/utils/attrs');
+var baseLayout = require('plugins/alerting/vis/components/layout/layout');
+var gGenerator = require('plugins/alerting/vis/components/elements/g');
 
 function layoutGenerator() {
   var layout = baseLayout();

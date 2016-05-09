@@ -4,7 +4,7 @@ var visGenerator = require('plugins/alerting/vis/index');
 
 var module = require('ui/modules').get('alerting');
 
-module.directive('tagCloud', function () {
+module.directive('alertingCloud', function () {
   function link (scope, element, attrs) {
     angular.element(document).ready(function () {
       var vis = visGenerator();

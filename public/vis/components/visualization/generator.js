@@ -1,7 +1,7 @@
 var d3 = require('d3');
 var _ = require('lodash');
-var builder = require('plugins/tagcloud/vis/components/utils/builder');
-var tagCloud = require('plugins/tagcloud/vis/components/visualization/tag_cloud');
+var builder = require('plugins/alerting/vis/components/utils/builder');
+var alertingCloud = require('plugins/alerting/vis/components/visualization/tag_cloud');
 
 function chartGenerator() {
   var opts = {};
@@ -10,7 +10,7 @@ function chartGenerator() {
     selection.each(function (data) {
       var dataOpts = (data && data.options) || {};
       var accessor = opts.accessor || dataOpts.accessor || 'tags';
-      var chart = tagCloud()
+      var chart = alertingCloud()
         .width(data.width)
         .height(data.height)
         .accessor(accessor);

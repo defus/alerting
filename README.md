@@ -1,7 +1,7 @@
 # Simple Alerting Dashboard Plugin
 A simple Alerting Dashboard Plugin for Kibana 4
 
-![Simple Alerting Dashboard](tagcloud.png)
+![Simple Alerting Dashboard](alerting.png)
 
 This visualization was inspired by [Tim Roe's](https://www.timroes.de/) blog [post](https://www.timroes.de/2015/12/06/writing-kibana-4-plugins-visualizations-using-data/) on creating a tag cloud plugin for Kibana 4. It is built using [D3](d3js.org) and Jason Davie's [d3-cloud](https://github.com/jasondavies/d3-cloud) plugin.
 

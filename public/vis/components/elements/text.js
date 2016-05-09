@@ -1,5 +1,5 @@
 var d3 = require('d3');
-var valuator = require('plugins/tagcloud/vis/components/utils/valuator');
+var valuator = require('plugins/alerting/vis/components/utils/valuator');
 
 function textGenerator() {
   var colorScale = d3.scale.category20();

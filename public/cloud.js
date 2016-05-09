@@ -2,7 +2,7 @@ require('plugins/alerting/cloud.less');
 require('plugins/alerting/lib/cloud_controller.js');
 require('plugins/alerting/lib/cloud_directive.js');
 
-function TagCloudProvider(Private) {
+function AlertingProvider(Private) {
   var TemplateVisType = Private(require('ui/template_vis_type/TemplateVisType'));
   var Schemas = Private(require('ui/Vis/Schemas'));
 
@@ -55,4 +55,4 @@ function TagCloudProvider(Private) {
   });
 }
 
-require('ui/registry/vis_types').register(TagCloudProvider);
+require('ui/registry/vis_types').register(AlertingProvider);
