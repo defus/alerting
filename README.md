@@ -1,7 +1,7 @@
-# Kibana Tag Cloud Plugin
-A Tag Cloud Plugin for Kibana 4
+# Simple Alerting Dashboard Plugin
+A simple Alerting Dashboard Plugin for Kibana 4
 
-![Kibana Tag Cloud](tagcloud.png)
+![Simple Alerting Dashboard](tagcloud.png)
 
 This visualization was inspired by [Tim Roe's](https://www.timroes.de/) blog [post](https://www.timroes.de/2015/12/06/writing-kibana-4-plugins-visualizations-using-data/) on creating a tag cloud plugin for Kibana 4. It is built using [D3](d3js.org) and Jason Davie's [d3-cloud](https://github.com/jasondavies/d3-cloud) plugin.
 
@@ -12,7 +12,7 @@ Kibana 4.3+
 1. Download and unpack [Kibana](https://www.elastic.co/downloads/kibana).
 2. From the Kibana root directory, install the plugin with the following command:
 
-```$ bin/kibana plugin -i tagcloud -u https://github.com/stormpython/tagcloud/archive/master.zip```
+```$ bin/kibana plugin -i alerting -u https://github.com/defus/alerting/archive/master.zip```
 
 ### Disclosure
 This repo is in its early stages. There is an outstanding [bug](https://github.com/stormpython/kibana-tag-cloud-plugin/issues/1) that needs to be fixed. In addition, please note d3-cloud's warning regarding how word clouds are rendered.
