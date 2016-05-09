@@ -1,6 +1,6 @@
 var _ = require('lodash');
 
-var module = require('ui/modules').get('tagcloud');
+var module = require('ui/modules').get('alerting');
 
 module.controller('CloudController', function ($scope) {
   $scope.$watch('esResponse', function (resp) {
