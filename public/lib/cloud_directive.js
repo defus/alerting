@@ -1,8 +1,8 @@
 var d3 = require('d3');
 var _ = require('lodash');
-var visGenerator = require('plugins/tagcloud/vis/index');
+var visGenerator = require('plugins/alerting/vis/index');
 
-var module = require('ui/modules').get('tagcloud');
+var module = require('ui/modules').get('alerting');
 
 module.directive('tagCloud', function () {
   function link (scope, element, attrs) {
