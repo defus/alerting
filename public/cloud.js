@@ -1,19 +1,19 @@
-require('plugins/tagcloud/cloud.less');
-require('plugins/tagcloud/lib/cloud_controller.js');
-require('plugins/tagcloud/lib/cloud_directive.js');
+require('plugins/alerting/cloud.less');
+require('plugins/alerting/lib/cloud_controller.js');
+require('plugins/alerting/lib/cloud_directive.js');
 
 function TagCloudProvider(Private) {
   var TemplateVisType = Private(require('ui/template_vis_type/TemplateVisType'));
   var Schemas = Private(require('ui/Vis/Schemas'));
 
   return new TemplateVisType({
-    name: 'tagcloud',
-    title: 'Tag cloud',
-    description: 'A tag cloud visualization is a visual representation of text data, ' +
-     'typically used to visualize free form text. Tags are usually single words, ' +
-     'and the importance of each tag is shown with font size or color.',
-    icon: 'fa-cloud',
-    template: require('plugins/tagcloud/cloud.html'),
+    name: 'alerting',
+    title: 'Simple Alerting Dashboard',
+    description: 'Simple Alerting Dashboard is a simple visualisation, ' +
+     'typically used to visualize alerts base on data, ' +
+     'and the importance of each alert is shown with font size or color.',
+    icon: 'fa-bell',
+    template: require('plugins/alerting/cloud.html'),
     params: {
       defaults: {
         textScale: 'linear',
@@ -28,7 +28,7 @@ function TagCloudProvider(Private) {
         minFontSize: 18,
         maxFontSize: 72
       },
-      editor: require('plugins/tagcloud/cloud_vis_params.html')
+      editor: require('plugins/alerting/cloud_vis_params.html')
     },
     schemas: new Schemas([
       {
