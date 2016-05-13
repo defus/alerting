@@ -1,6 +1,6 @@
-require('plugins/alerting/cloud.less');
-require('plugins/alerting/lib/cloud_controller.js');
-require('plugins/alerting/lib/cloud_directive.js');
+require('plugins/alerting/circle.less');
+require('plugins/alerting/lib/circle_controller.js');
+require('plugins/alerting/lib/circle_directive.js');
 
 function AlertingProvider(Private) {
   var TemplateVisType = Private(require('ui/template_vis_type/TemplateVisType'));
@@ -8,12 +8,12 @@ function AlertingProvider(Private) {
 
   return new TemplateVisType({
     name: 'alerting',
-    title: 'Simple Alerting Dashboard',
-    description: 'Simple Alerting Dashboard is a simple visualisation, ' +
+    title: 'Alerting',
+    description: 'Alerting is a simple visualisation, ' +
      'typically used to visualize alerts base on data, ' +
      'and the importance of each alert is shown with font size or color.',
     icon: 'fa-bell',
-    template: require('plugins/alerting/cloud.html'),
+    template: require('plugins/alerting/circle.html'),
     params: {
       defaults: {
         textScale: 'linear',
@@ -28,7 +28,7 @@ function AlertingProvider(Private) {
         minFontSize: 18,
         maxFontSize: 72
       },
-      editor: require('plugins/alerting/cloud_vis_params.html')
+      editor: require('plugins/alerting/circle_vis_params.html')
     },
     schemas: new Schemas([
       {
@@ -45,7 +45,7 @@ function AlertingProvider(Private) {
       {
         group: 'buckets',
         name: 'segment',
-        icon: 'fa fa-cloud',
+        icon: 'fa fa-bel',
         title: 'Tags',
         min: 1,
         max: 1,

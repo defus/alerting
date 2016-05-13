@@ -9,7 +9,7 @@ var watch = require('gulp-watch');
 
 var pkg = require('./package.json');
 
-var kibanaPluginDir = path.resolve(__dirname, '../kibana/installedPlugins/alerting');
+var kibanaPluginDir = path.resolve(__dirname, '../kibana-4.5.0-windows/installedPlugins/alerting');
 
 var include = ['package.json', 'index.js', 'public', 'node_modules'];
 var exclude = Object.keys(pkg.devDependencies).map(function (name) {

@@ -2,7 +2,7 @@ var _ = require('lodash');
 
 var module = require('ui/modules').get('alerting');
 
-module.controller('CloudController', function ($scope) {
+module.controller('CircleController', function ($scope) {
   $scope.$watch('esResponse', function (resp) {
     if (!resp) {
       $scope.data = null;
