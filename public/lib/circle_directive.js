@@ -31,7 +31,11 @@ module.directive('alertingCircle', function () {
           .size(getSize());
 
         if (data) {
-          svg.datum(data).call(vis);
+          //svg.datum(data).call(vis);
+          var circle = svg.append("circle")
+                         .attr("cx", 30)
+                         .attr("cy", 30)
+                         .attr("r", 20);
         }
       };
 
