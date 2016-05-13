@@ -21,3 +21,12 @@ This repo is in its early stages. There is an outstanding [bug](https://github.c
 
 ### Issues
 Please file issues [here](https://github.com/stormpython/kibana-tag-cloud-plugin/issues).
+
+### Dev
+1. Uninstall old installation :
+
+```$ bin/kibana plugin -r alerting```
+
+2. Install new one
+
+```$ bin/kibana plugin -i alerting -u https://github.com/defus/alerting/archive/master.zip```

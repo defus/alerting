@@ -3,6 +3,7 @@ var _ = require('lodash');
 var module = require('ui/modules').get('alerting');
 
 module.controller('CircleController', function ($scope) {
+  // $watch permet d'écouter la réponse à la requete ES faite par Kibana
   $scope.$watch('esResponse', function (resp) {
     if (!resp) {
       $scope.data = null;
